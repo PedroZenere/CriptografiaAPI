@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4EDCDF2A-4216-4F5A-8740-DFB98445B135}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{EF68FADF-A05D-456D-B24C-FE3C4E6F62F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{6DD416C5-1F03-407A-A720-74888350AB77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{28E0FF2C-3D6C-4FF9-A41A-E3AC79BEBF1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{570A43D4-8DCE-4F59-BFDC-CB0C92C73626}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriptografiaAPI.Server", "CriptografiaAPI.Server\CriptografiaAPI.Server.csproj", "{3C2017FF-D7A3-4F7C-9788-AD7851351726}"
+	ProjectSection(ProjectDependencies) = postProject
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D} = {615ADFE1-C09D-4E6F-A6E8-838D29FE878D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriptografiaAPI.Domain", "CriptografiaAPI.Domain\CriptografiaAPI.Domain.csproj", "{6F3CE34C-3067-4964-9EB7-F876C219399B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriptografiaAPI.Infra", "CriptografiaAPI.Infra\CriptografiaAPI.Infra.csproj", "{615ADFE1-C09D-4E6F-A6E8-838D29FE878D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F3CE34C-3067-4964-9EB7-F876C219399B} = {6F3CE34C-3067-4964-9EB7-F876C219399B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriptografiaAPI.Application", "CriptografiaAPI.Application\CriptografiaAPI.Application.csproj", "{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptografiaAPI.Criptografar", "CriptografiaAPI.Criptografar\CriptografiaAPI.Criptografar.csproj", "{32B8335C-17AB-402F-93DD-44F8AD5571A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C2017FF-D7A3-4F7C-9788-AD7851351726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2017FF-D7A3-4F7C-9788-AD7851351726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2017FF-D7A3-4F7C-9788-AD7851351726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2017FF-D7A3-4F7C-9788-AD7851351726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3CE34C-3067-4964-9EB7-F876C219399B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3CE34C-3067-4964-9EB7-F876C219399B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3CE34C-3067-4964-9EB7-F876C219399B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3CE34C-3067-4964-9EB7-F876C219399B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B8335C-17AB-402F-93DD-44F8AD5571A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B8335C-17AB-402F-93DD-44F8AD5571A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B8335C-17AB-402F-93DD-44F8AD5571A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B8335C-17AB-402F-93DD-44F8AD5571A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF68FADF-A05D-456D-B24C-FE3C4E6F62F2} = {4EDCDF2A-4216-4F5A-8740-DFB98445B135}
+		{6DD416C5-1F03-407A-A720-74888350AB77} = {4EDCDF2A-4216-4F5A-8740-DFB98445B135}
+		{28E0FF2C-3D6C-4FF9-A41A-E3AC79BEBF1A} = {4EDCDF2A-4216-4F5A-8740-DFB98445B135}
+		{570A43D4-8DCE-4F59-BFDC-CB0C92C73626} = {4EDCDF2A-4216-4F5A-8740-DFB98445B135}
+		{3C2017FF-D7A3-4F7C-9788-AD7851351726} = {EF68FADF-A05D-456D-B24C-FE3C4E6F62F2}
+		{6F3CE34C-3067-4964-9EB7-F876C219399B} = {28E0FF2C-3D6C-4FF9-A41A-E3AC79BEBF1A}
+		{615ADFE1-C09D-4E6F-A6E8-838D29FE878D} = {570A43D4-8DCE-4F59-BFDC-CB0C92C73626}
+		{F7DA2C37-FEFD-4D3D-B848-25BE79CECD75} = {6DD416C5-1F03-407A-A720-74888350AB77}
+		{32B8335C-17AB-402F-93DD-44F8AD5571A4} = {570A43D4-8DCE-4F59-BFDC-CB0C92C73626}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E805565-B802-498A-959A-BF69ED50024B}
+	EndGlobalSection
+EndGlobal
